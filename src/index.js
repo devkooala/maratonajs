@@ -1,6 +1,7 @@
 const express = require("express");
-const app = express();
+const db = require("./models");
 
+const app = express();
 const authControllers = require("./controllers/auth");
 
 app.listen(3001, () => {
@@ -9,6 +10,8 @@ app.listen(3001, () => {
 
 app.use("/auth", authControllers);
 
-app.get("/", (req, res)=>{
-    res.json("Api is f working");
+db.sequelize.sync().then(()=> {
+    app.get("/", (req, res)=>{
+        res.json("Api is f working");
+    });
 });

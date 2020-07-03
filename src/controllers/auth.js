@@ -17,14 +17,14 @@ router.get("/sign-up", async (req, res) => {
     const account = await Account.findOne({where: {email}});
 
     if (account) {
-        return res.json({error: "Email is already in use!"});  
+        return res.jsonBadRequest(null, null, "Email is already in use!");  
     }
 
     const hash = await bcrypt.hash(password, rounds);
     const result = await Account.create({email, password: hash});
     
     console.log({email, hash});
-    return res.json(result);  
+    return res.jsonOk(result, "bilau chuped");  
 });
 
 module.exports = router;

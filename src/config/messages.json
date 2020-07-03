@@ -1,0 +1,22 @@
+{
+    "response.json_ok": "Requisição sucedida!",
+    "response.json_bad_request": "Requisição inválida!",
+    "response.json_unauthorized": "Requisição não autorizada!",
+    "response.json_not_found": "Requisição não encontrada!",
+    "response.json_server_error": "Erro interno no servidor.",
+    
+    "account.signup.email_taken": "Endereço de email já cadastrado!",
+    "account.signup.sucess": "Cadastro efetuado com sucesso!",
+
+    "account.signup.email.any.required": "É necessário informar um email!",
+    "account.signup.email.string.base": "O email precisa ser um texto!",
+    "account.signup.email.string.email": "Endereço de email inválido!",
+    "account.signup.password.any.required": "É necessário informar uma senha!",
+
+    "account.signup.password.string.empty": "A senha não pode ser vazia!",
+    "account.signup.password.string.base": "A senha precisa ser um texto!",
+
+    "account.signup.password.string.pattern.base": "A senha deve ter entre 3 e 30 caracteres e incluir letras e números",
+    "account.signup.password_confirmation.any.required": "É necessário confirmar a senha!",
+    "account.signup.password_confirmation.any.only": "As senhas não conferem!"
+}
